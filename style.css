@@ -130,11 +130,12 @@ td:last-child {
     }
 }
 
-.cp {
+.cp{
     font-family: 'Princess Sofia', cursive;
-
     width: 100%;
     text-align: center;
     color: aliceblue;
     background: linear-gradient(transparent, brown);
+    position: fixed;
+    bottom: 0;
 }
