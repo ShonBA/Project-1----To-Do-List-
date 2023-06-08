@@ -50,16 +50,19 @@ h1 {
     padding-bottom: 5%;
     width: 20%;
     border: 1px solid black;
+    color: black !important;
 }
 
 
 input[type="date"] {
     width: 30%;
+    color: black !important;
 }
 
 
 
 input[type="time"] {
+    color: black !important;
     width: 30%;
 }
 

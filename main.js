@@ -20,8 +20,6 @@ function addTask() {
     dateNumberBox.value = "";
     timeNumberBox.value = "";
     taskTextBox.focus();
-
-
 }
 
 function saveToLocalStorage() {
