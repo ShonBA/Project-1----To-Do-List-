@@ -6,8 +6,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
-
+    height: 9.375em;
 }
 
 h1 {
@@ -33,7 +32,7 @@ h1 {
 
 .spacer {
     width: 100%;
-    height: 17px;
+    height: 1.0625em;
     border: 0;
 }
 
@@ -67,31 +66,31 @@ input[type="time"] {
 
 
 footer {
-    margin: 50px;
+    margin: 3.125em;
 }
 
 td {
     background-image: url(assets/images/notebg.png);
     background-repeat: no-repeat;
-    width: 200px;
-    height: 250px;
-    padding: 10px;
+    width: 12.5em;
+    height: 15.625em;
+    padding: 0.625em;
 }
 
 td>span:first-child {
     overflow-y: auto;
     display: flex;
     flex-wrap: wrap;
-    height: 145px;
-    width: 170px;
+    height: 9.0625em;
+    width: 10.625em;
 }
 
 td>span:last-child {
     display: flex;
     justify-content: start;
     align-items: end;
-    height: 70px;
-    width: 170px;
+    height: 4.375em;
+    width: 10.625em;
 
 }
 
@@ -103,21 +102,11 @@ td>span>div {
     align-items: baseline;
 }
 
-.removeButton {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-
-}
-
-td:hover .removeButton {
-    opacity: 1;
-}
-
 td:last-child {
     transform: 1s;
     animation: fadeIn;
     animation-duration: 0.5s;
-
+    
 }
 
 .cp{
@@ -129,6 +118,21 @@ td:last-child {
     position: fixed;
     bottom: 0;
 }
+
+/* Button apper on hover */
+.removeButton {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+}
+
+td:hover .removeButton {
+    opacity: 1;
+}
+
+/* key frames  */
+/* add the fade in affect */
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -138,9 +142,34 @@ td:last-child {
         opacity: 1;
     }
 }
-@media only screen and (max-width:500px){
-    /* For mobile phones: */
-    .menu, .main, .right {
-      width: 100%;
-    };
-};
+
+/* Media Queries */
+
+/* Adjust the formArea width for smaller screens */
+@media (max-width: 768px) {
+    .formArea {
+        width: 80%;
+    }
+}
+
+/* Adjust the gridElements width for smaller screens */
+@media (max-width: 768px) {
+    .gridElements {
+        width: 40%;
+    }
+}
+
+/* Adjust the td width and height for smaller screens */
+@media (max-width: 768px) {
+    td {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Adjust the h1 font-size for smaller screens */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 40px;
+    }
+}
