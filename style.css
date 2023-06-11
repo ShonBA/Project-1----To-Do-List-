@@ -7,7 +7,10 @@ header {
     justify-content: center;
     align-items: center;
     height: 9.375em;
+<<<<<<< HEAD
 
+=======
+>>>>>>> a670cec54877d415e7492962f90564e59525a148
 }
 
 h1 {
@@ -63,6 +66,7 @@ input[type="date"] {
 
 
 input[type="time"] {
+    color: black !important;
     width: 30%;
     color: black !important;
 }
@@ -106,6 +110,24 @@ td>span>div {
     align-items: baseline;
 }
 
+td:last-child {
+    transform: 1s;
+    animation: fadeIn;
+    animation-duration: 0.5s;
+    
+}
+
+.cp{
+    font-family: 'Princess Sofia', cursive;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    background: linear-gradient(transparent, brown);
+    position: fixed;
+    bottom: 0;
+}
+
+/* Button apper on hover */
 .removeButton {
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -116,12 +138,8 @@ td:hover .removeButton {
     opacity: 1;
 }
 
-td:last-child {
-    transform: 1s;
-    animation: fadeIn;
-    animation-duration: 0.5s;
-
-}
+/* key frames  */
+/* add the fade in affect */
 
 .cp {
     font-family: 'Princess Sofia', cursive;
@@ -145,11 +163,16 @@ td:last-child {
 
 /* Media Queries */
 
+<<<<<<< HEAD
 /* Adjust the formArea, gridElements and td width for smaller screens */
+=======
+/* Adjust the formArea width for smaller screens */
+>>>>>>> a670cec54877d415e7492962f90564e59525a148
 @media (max-width: 768px) {
     .formArea {
         width: 80%;
     }
+<<<<<<< HEAD
 
     .gridElements {
         width: 40%;
@@ -157,6 +180,22 @@ td:last-child {
 
     td {
         width: 100%;
+=======
+}
+
+/* Adjust the gridElements width for smaller screens */
+@media (max-width: 768px) {
+    .gridElements {
+        width: 40%;
+    }
+}
+
+/* Adjust the td width and height for smaller screens */
+@media (max-width: 768px) {
+    td {
+        width: 100%;
+        height: auto;
+>>>>>>> a670cec54877d415e7492962f90564e59525a148
     }
 }
 

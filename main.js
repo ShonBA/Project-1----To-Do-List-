@@ -20,12 +20,15 @@ function addTask() {
     dateNumberBox.value = "";
     timeNumberBox.value = "";
     taskTextBox.focus();
+<<<<<<< HEAD
 }
 
 
 function dateTemplate(date){
     const [year , month, day] = date.split("-")
     return `${day}-${month}-${year}`;
+=======
+>>>>>>> a670cec54877d415e7492962f90564e59525a148
 }
 
 function saveToLocalStorage() {
