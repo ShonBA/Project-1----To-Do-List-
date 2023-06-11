@@ -100,10 +100,16 @@ td>span:last-child {
 
 td>span>div {
     height: 100%;
-    width: 50%;
+    width: 40%;
     display: grid;
     justify-content: right;
     align-items: baseline;
+}
+
+td>span>div:first-child {
+    width: 60%;
+    align-items: end;
+    justify-content: left;
 }
 
 td:last-child {
