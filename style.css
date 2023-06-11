@@ -2,6 +2,7 @@ body {
     background-image: url(assets/images/tile.jpg);
 }
 
+/* centering the header */
 header {
     display: flex;
     justify-content: center;
@@ -9,6 +10,7 @@ header {
     height: 9.375em;
 }
 
+/* header font from google fonts */
 h1 {
     font-family: 'Princess Sofia', cursive;
     font-size: 5em
@@ -20,7 +22,7 @@ h1 {
     text-align: center;
 }
 
-.anotherContainer {
+.formElementsContainer {
     display: flex;
 }
 
@@ -30,6 +32,7 @@ h1 {
     border: 2px solid black;
 }
 
+/* uses div spacers to line the textarea with the background and also the buttons */
 .spacer {
     width: 100%;
     height: 1.0625em;
@@ -53,13 +56,10 @@ h1 {
     color: black !important;
 }
 
-
 input[type="date"] {
     width: 30%;
     color: black !important;
 }
-
-
 
 input[type="time"] {
     color: black !important;
@@ -67,12 +67,11 @@ input[type="time"] {
     color: black !important;
 }
 
-
-
 footer {
     margin: 3.125em;
 }
 
+/* the task note background */
 td {
     background-image: url(assets/images/notebg.png);
     background-repeat: no-repeat;
@@ -81,6 +80,7 @@ td {
     padding: 0.625em;
 }
 
+/*the task area(upper part of the note), scrolling showing only when needed */
 td>span:first-child {
     overflow-y: auto;
     display: flex;
@@ -89,6 +89,7 @@ td>span:first-child {
     width: 10.625em;
 }
 
+/* date and time container (bottom part of the note) */
 td>span:last-child {
     display: flex;
     justify-content: start;
@@ -98,6 +99,7 @@ td>span:last-child {
 
 }
 
+/* remove button container (right bottom section) */
 td>span>div {
     height: 100%;
     width: 40%;
@@ -106,20 +108,23 @@ td>span>div {
     align-items: baseline;
 }
 
+/* date and time container (left bottom section) */
 td>span>div:first-child {
     width: 60%;
     align-items: end;
     justify-content: left;
 }
 
+/* animation on the last note */
 td:last-child {
     transform: 1s;
     animation: fadeIn;
     animation-duration: 0.5s;
-    
+
 }
 
-.cp{
+/* copy right */
+.cp {
     font-family: 'Princess Sofia', cursive;
     width: 100%;
     text-align: center;
