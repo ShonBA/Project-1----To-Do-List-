@@ -7,10 +7,6 @@ header {
     justify-content: center;
     align-items: center;
     height: 9.375em;
-<<<<<<< HEAD
-
-=======
->>>>>>> a670cec54877d415e7492962f90564e59525a148
 }
 
 h1 {
@@ -163,16 +159,11 @@ td:hover .removeButton {
 
 /* Media Queries */
 
-<<<<<<< HEAD
 /* Adjust the formArea, gridElements and td width for smaller screens */
-=======
-/* Adjust the formArea width for smaller screens */
->>>>>>> a670cec54877d415e7492962f90564e59525a148
 @media (max-width: 768px) {
     .formArea {
         width: 80%;
     }
-<<<<<<< HEAD
 
     .gridElements {
         width: 40%;
@@ -180,22 +171,6 @@ td:hover .removeButton {
 
     td {
         width: 100%;
-=======
-}
-
-/* Adjust the gridElements width for smaller screens */
-@media (max-width: 768px) {
-    .gridElements {
-        width: 40%;
-    }
-}
-
-/* Adjust the td width and height for smaller screens */
-@media (max-width: 768px) {
-    td {
-        width: 100%;
-        height: auto;
->>>>>>> a670cec54877d415e7492962f90564e59525a148
     }
 }
 
